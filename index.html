@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Data Analysis | D. Samhitha</title>
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --accent-gold: #f1c40f;
+            --text-gray: #444;
+            --bg-light: #fdfdfd;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-gray); background-color: #f0f2f5; margin: 0; }
+        header { background: linear-gradient(135deg, var(--primary-blue), #00509d); color: white; padding: 60px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .container { max-width: 950px; margin: -40px auto 40px; background: white; padding: 50px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .meta-info { border-left: 5px solid var(--accent-gold); padding: 15px 25px; background: #fff9e6; margin-bottom: 40px; border-radius: 0 8px 8px 0; }
+        h2 { color: var(--primary-blue); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+        .code-block { background: #282c34; color: #abb2bf; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Consolas', monospace; font-size: 14px; line-height: 1.5; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; }
+        th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: var(--primary-blue); color: white; }
+        .img-box { text-align: center; margin: 30px 0; background: #fafafa; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+        .img-box img { max-width: 100%; height: auto; border-radius: 4px; }
+        .footer { text-align: center; padding: 30px; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Housing Price Data Analysis</h1>
+    <p>A8518 Python for Data Analytics Laboratory Project</p>
+</header>
+
+<div class="container">
+    <div class="meta-info">
+        <p><strong>Student:</strong> D. Samhitha (24881A0510) [cite: 7, 22]</p>
+        <p><strong>Institution:</strong> Vardhaman College of Engineering, Hyderabad [cite: 11]</p>
+        <p><strong>Faculty:</strong> A. Bhanu Prasad, Associate Professor [cite: 9, 10]</p>
+        <p><strong>Date:</strong> March 2026 [cite: 12]</p>
+    </div>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <p>This project demonstrates the application of data analytics to identify key factors influencing property values, such as location, size, and amenities[cite: 34, 35]. It employs exploratory data analysis (EDA) and machine learning regression models to predict housing prices[cite: 36, 37].</p>
+    </section>
+
+    <section id="objectives">
+        <h2>Project Objectives</h2>
+        <ul>
+            <li>Understand the impact of location and size on property prices[cite: 64].</li>
+            <li>Identify patterns and trends using visualization techniques[cite: 65].</li>
+            <li>Build predictive regression models with high accuracy[cite: 66].</li>
+        </ul>
+    </section>
+
+    <section id="methodology">
+        <h2>Methodology</h2>
+        <p>The system follows a structured workflow: Data Collection, Preprocessing, EDA, and Model Training[cite: 69, 70, 71, 72].</p>
+        <div class="img-box">
+            <img src="architecture.png" alt="Architectural Diagram">
+            <p><em>Figure 1: Architectural Diagram of the Analysis System [cite: 85, 88]</em></p>
+        </div>
+    </section>
+
+    <section id="implementation">
+        <h2>Implementation</h2>
+        <p>The project is implemented using Python and key libraries including Pandas, Scikit-learn, and Matplotlib[cite: 96, 98, 110, 112].</p>
+        <div class="code-block">
+# Feature and Target Selection
+X = df[['SquareFeet', 'Bedrooms']] [cite: 134]
+y = df['Price'] [cite: 136]
+
+# Model Training
+model = LinearRegression() [cite: 141]
+model.fit(X_train, y_train) [cite: 142]
+
+# Prediction and Evaluation
+y_pred = model.predict(X_test) [cite: 145]
+mse = mean_squared_error(y_test, y_pred) [cite: 148]
+        </div>
+    </section>
+
+    <section id="results">
+        <h2>Results & Discussion</h2>
+        <div class="img-box">
+            <img src="graph.png" alt="Price vs Square Feet Graph">
+            <p><em>Figure 2: Relationship between Square Footage and Housing Price [cite: 163]</em></p>
+        </div>
+        <p>Analysis confirmed that property size and room count are primary drivers of housing costs[cite: 165].</p>
+    </section>
+
+    <section id="sdg">
+        <h2>Alignment with SDGs</h2>
+        <table>
+            <tr><th>SDG No.</th><th>Goal</th><th>Relevance</th></tr>
+            <tr><td>SDG 4</td><td>Quality Education</td><td>Practical learning of machine learning concepts[cite: 170].</td></tr>
+            <tr><td>SDG 8</td><td>Decent Work</td><td>Data-driven decision making for the real estate sector[cite: 171].</td></tr>
+            <tr><td>SDG 9</td><td>Innovation</td><td>Use of innovative tools for real-world problem solving[cite: 172].</td></tr>
+        </table>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>The project successfully utilized regression models to estimate property values, providing a scalable solution for real estate analysis[cite: 175, 177].</p>
+    </section>
+</div>
+
+<div class="footer">
+    &copy; 2026 D. Samhitha | Computer Science and Engineering | VCE [cite: 7, 11, 21]
+</div>
+
+</body>
+</html>
