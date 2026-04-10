@@ -6,23 +6,24 @@
     <title>Housing Price Data Analysis | D. Samhitha</title>
     <style>
         :root {
-            --primary-blue: #003366;
-            --accent-gold: #f1c40f;
-            --text-gray: #444;
-            --bg-light: #fdfdfd;
+            --primary-blue: #2c3e50;
+            --accent-blue: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
         }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-gray); background-color: #f0f2f5; margin: 0; }
-        header { background: linear-gradient(135deg, var(--primary-blue), #00509d); color: white; padding: 60px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .container { max-width: 950px; margin: -40px auto 40px; background: white; padding: 50px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .meta-info { border-left: 5px solid var(--accent-gold); padding: 15px 25px; background: #fff9e6; margin-bottom: 40px; border-radius: 0 8px 8px 0; }
-        h2 { color: var(--primary-blue); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
-        .code-block { background: #282c34; color: #abb2bf; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Consolas', monospace; font-size: 14px; line-height: 1.5; margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; margin: 25px 0; }
-        th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); margin: 0; padding: 0; }
+        header { background-color: var(--primary-blue); color: white; padding: 50px 20px; text-align: center; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        h1, h2, h3 { color: var(--primary-blue); }
+        h2 { border-left: 5px solid var(--accent-blue); padding-left: 15px; margin-top: 35px; }
+        .project-meta { font-style: italic; color: #7f8c8d; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 30px; }
+        .img-container { text-align: center; margin: 30px 0; background: #fafafa; padding: 20px; border: 1px dotted #ccc; }
+        .img-container img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        code { background-color: #f8f9fa; border-left: 4px solid var(--accent-blue); display: block; padding: 15px; overflow-x: auto; font-family: 'Courier New', monospace; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 12px; border: 1px solid #ddd; }
         th { background-color: var(--primary-blue); color: white; }
-        .img-box { text-align: center; margin: 30px 0; background: #fafafa; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
-        .img-box img { max-width: 100%; height: auto; border-radius: 4px; }
-        .footer { text-align: center; padding: 30px; color: #888; font-size: 14px; }
+        footer { text-align: center; padding: 30px; color: #7f8c8d; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -33,82 +34,80 @@
 </header>
 
 <div class="container">
-    <div class="meta-info">
-        <p><strong>Student:</strong> D. Samhitha (24881A0510) [cite: 7, 22]</p>
-        <p><strong>Institution:</strong> Vardhaman College of Engineering, Hyderabad [cite: 11]</p>
-        <p><strong>Faculty:</strong> A. Bhanu Prasad, Associate Professor [cite: 9, 10]</p>
-        <p><strong>Date:</strong> March 2026 [cite: 12]</p>
+    <div class="project-meta">
+        <p><strong>Submitted by:</strong> D. Samhitha (24881A0510)</p>
+        <p><strong>Institution:</strong> Vardhaman College of Engineering, Hyderabad</p>
+        <p><strong>Course Facilitator:</strong> A. Bhanu Prasad, Associate Professor</p>
+        <p><strong>Date:</strong> March 2026</p>
     </div>
 
     <section id="abstract">
         <h2>Abstract</h2>
-        <p>This project demonstrates the application of data analytics to identify key factors influencing property values, such as location, size, and amenities[cite: 34, 35]. It employs exploratory data analysis (EDA) and machine learning regression models to predict housing prices[cite: 36, 37].</p>
+        <p>Housing Price Data Analysis is a data-driven project that focuses on understanding the factors influencing housing prices using analytical and statistical techniques. The project involves collecting and preprocessing housing datasets to identify key trends among variables such as location, size, and amenities.</p>
     </section>
 
-    <section id="objectives">
-        <h2>Project Objectives</h2>
-        <ul>
-            <li>Understand the impact of location and size on property prices[cite: 64].</li>
-            <li>Identify patterns and trends using visualization techniques[cite: 65].</li>
-            <li>Build predictive regression models with high accuracy[cite: 66].</li>
-        </ul>
+    <section id="problem-statement">
+        <h2>Problem Statement</h2>
+        <p>Housing prices are influenced by many complex factors, making it difficult for people to accurately estimate property values. This project uses data analytics to identify key trends and builds a predictive model to help buyers and sellers make informed, data-driven decisions.</p>
     </section>
 
     <section id="methodology">
         <h2>Methodology</h2>
-        <p>The system follows a structured workflow: Data Collection, Preprocessing, EDA, and Model Training[cite: 69, 70, 71, 72].</p>
-        <div class="img-box">
-            <img src="architecture.png" alt="Architectural Diagram">
-            <p><em>Figure 1: Architectural Diagram of the Analysis System [cite: 85, 88]</em></p>
+        <p>The project follows a systematic workflow including data collection, preprocessing to handle missing values, and exploratory data analysis (EDA) to understand the structure of the dataset.</p>
+        
+        <div class="img-container">
+            <img src="Screenshot_20260410-172800_Drive.jpg" alt="Architectural Diagram">
+            <p><em>Figure 1: Architectural Diagram of Housing Price Data Analysis System</em></p>
         </div>
+
+        <h3>Working Principle</h3>
+        <p>The core principle involves cleaning the dataset, performing EDA with visualization tools to identify significant features, and then applying machine learning regression techniques to estimate property values based on input parameters.</p>
     </section>
 
     <section id="implementation">
-        <h2>Implementation</h2>
-        <p>The project is implemented using Python and key libraries including Pandas, Scikit-learn, and Matplotlib[cite: 96, 98, 110, 112].</p>
-        <div class="code-block">
-# Feature and Target Selection
-X = df[['SquareFeet', 'Bedrooms']] [cite: 134]
-y = df['Price'] [cite: 136]
+        <h2>Software Implementation</h2>
+        <p>Implemented using Python with libraries such as Pandas, NumPy, and Scikit-learn.</p>
+        <code>
+# Model Training Snippet
+import pandas as pd
+from sklearn.linear_model import LinearRegression
 
-# Model Training
-model = LinearRegression() [cite: 141]
-model.fit(X_train, y_train) [cite: 142]
-
-# Prediction and Evaluation
-y_pred = model.predict(X_test) [cite: 145]
-mse = mean_squared_error(y_test, y_pred) [cite: 148]
-        </div>
+# Loading dataset and training
+X = df[['SquareFeet', 'Bedrooms']]
+y = df['Price']
+model = LinearRegression()
+model.fit(X_train, y_train)
+        </code>
     </section>
 
     <section id="results">
-        <h2>Results & Discussion</h2>
-        <div class="img-box">
-            <img src="graph.png" alt="Price vs Square Feet Graph">
-            <p><em>Figure 2: Relationship between Square Footage and Housing Price [cite: 163]</em></p>
+        <h2>Results and Discussion</h2>
+        <p>The analysis demonstrates the effectiveness of data analytics in predicting prices. A clear relationship was identified between a property's square footage and its final price.</p>
+        
+        <div class="img-container">
+            <img src="Screenshot_20260410-172824_Drive.jpg" alt="Results Graph">
+            <p><em>Figure 2: Relationship between Square Footage and Housing Price</em></p>
         </div>
-        <p>Analysis confirmed that property size and room count are primary drivers of housing costs[cite: 165].</p>
     </section>
 
-    <section id="sdg">
-        <h2>Alignment with SDGs</h2>
+    <section id="outcomes">
+        <h2>Mapping Outcomes</h2>
         <table>
-            <tr><th>SDG No.</th><th>Goal</th><th>Relevance</th></tr>
-            <tr><td>SDG 4</td><td>Quality Education</td><td>Practical learning of machine learning concepts[cite: 170].</td></tr>
-            <tr><td>SDG 8</td><td>Decent Work</td><td>Data-driven decision making for the real estate sector[cite: 171].</td></tr>
-            <tr><td>SDG 9</td><td>Innovation</td><td>Use of innovative tools for real-world problem solving[cite: 172].</td></tr>
+            <tr><th>PO No.</th><th>Program Outcome</th><th>Relevance</th></tr>
+            <tr><td>PO1</td><td>Engineering Knowledge</td><td>Application of Python for data analytics and price prediction.</td></tr>
+            <tr><td>PO5</td><td>Tool Usage</td><td>Using Scikit-learn, Pandas, and Matplotlib.</td></tr>
         </table>
     </section>
 
     <section id="conclusion">
         <h2>Conclusion</h2>
-        <p>The project successfully utilized regression models to estimate property values, providing a scalable solution for real estate analysis[cite: 175, 177].</p>
+        <p>The project successfully demonstrates how data analytics and machine learning techniques can solve real-world problems in the real estate domain by providing reasonably accurate property price estimations.</p>
     </section>
 </div>
 
-<div class="footer">
-    &copy; 2026 D. Samhitha | Computer Science and Engineering | VCE [cite: 7, 11, 21]
-</div>
+<footer>
+    &copy; 2026 D. Samhitha | Computer Science and Engineering | Vardhaman College of Engineering
+</footer>
 
 </body>
 </html>
